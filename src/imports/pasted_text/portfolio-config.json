@@ -1,0 +1,263 @@
+{
+  "prompt": {
+    "project_type": "Personal Portfolio Website",
+    "specialization": ["Graphic Design", "Motion Graphics"],
+    "tone": "Bold, cinematic, creative, premium",
+
+    "design_system": {
+      "theme": "Dark mode primary",
+      "color_palette": {
+        "background": "#0A0A0A",
+        "surface": "#111111",
+        "card": "#1A1A1A",
+        "accent_primary": "#FF4D00",
+        "accent_secondary": "#FFD700",
+        "text_primary": "#F5F5F5",
+        "text_muted": "#888888",
+        "border": "#2A2A2A"
+      },
+      "typography": {
+        "heading_font": "Syne or Clash Display",
+        "body_font": "Inter or DM Sans",
+        "heading_style": "Bold, large, tight letter-spacing",
+        "accent_style": "Uppercase, wide letter-spacing for labels"
+      },
+      "border_radius": "4px for cards, 2px for buttons (sharp, editorial feel)",
+      "grid": "12-column, max-width 1440px, asymmetric layouts"
+    },
+
+    "sections": [
+      {
+        "id": "hero",
+        "type": "Full-screen hero",
+        "content": {
+          "headline": "[Your Name]",
+          "subheadline": "Graphic Designer & Motion Artist",
+          "tagline": "Crafting visuals that move — literally.",
+          "cta_primary": { "label": "View Work", "action": "scroll to #work" },
+          "cta_secondary": { "label": "Watch Reel", "action": "open video modal" }
+        },
+        "layout": "Split layout — large typography left, looping showreel video or animated graphic right",
+        "animation": "Staggered text reveal on load, subtle parallax on scroll, cursor-following glow effect"
+      },
+
+      {
+        "id": "marquee",
+        "type": "Scrolling ticker strip",
+        "content": {
+          "items": [
+            "Brand Identity", "Motion Graphics", "Visual Development",
+            "Type Design", "2D Animation", "Art Direction",
+            "Social Media Creatives", "Video Editing"
+          ]
+        },
+        "layout": "Full-width horizontal auto-scroll strip between hero and about",
+        "animation": "Infinite left-scroll, pause on hover"
+      },
+
+      {
+        "id": "about",
+        "type": "About section",
+        "content": {
+          "headline": "Design is my language. Motion is my voice.",
+          "bio": "A short 2–3 sentence bio about your background, design philosophy, and what drives your work.",
+          "stats": [
+            { "value": "5+", "label": "Years Experience" },
+            { "value": "80+", "label": "Projects Delivered" },
+            { "value": "30+", "label": "Happy Clients" }
+          ],
+          "image": "Professional photo or illustrated avatar, grainy film texture overlay"
+        },
+        "layout": "Two-column — image left (60%), text and stats right (40%)",
+        "animation": "Counter animation on stats when scrolled into view"
+      },
+
+      {
+        "id": "services",
+        "type": "Services section",
+        "content": {
+          "headline": "What I Do",
+          "services": [
+            {
+              "icon": "pen-tool",
+              "title": "Brand Identity",
+              "description": "Logos, visual systems, color guides, and brand guidelines built to last."
+            },
+            {
+              "icon": "film",
+              "title": "Motion Graphics",
+              "description": "Animated logos, explainer videos, social content, and broadcast-ready motion."
+            },
+            {
+              "icon": "layers",
+              "title": "Visual Design",
+              "description": "Posters, packaging, editorial layouts, and digital assets that demand attention."
+            },
+            {
+              "icon": "play-circle",
+              "title": "Video Editing",
+              "description": "Cuts, color grading, and motion overlays for reels, ads, and short films."
+            }
+          ]
+        },
+        "layout": "Horizontal card row, each card expands on hover to reveal description",
+        "animation": "Cards slide up on scroll with stagger delay"
+      },
+
+      {
+        "id": "work",
+        "type": "Portfolio / Project showcase",
+        "content": {
+          "headline": "Selected Work",
+          "filter_tabs": ["All", "Branding", "Motion", "Print", "Social Media"],
+          "projects": [
+            {
+              "title": "Project One",
+              "category": "Branding",
+              "thumbnail": "Full-bleed image or looping video thumbnail",
+              "tags": ["Logo", "Brand System", "Guidelines"],
+              "year": "2024"
+            },
+            {
+              "title": "Project Two",
+              "category": "Motion",
+              "thumbnail": "Looping GIF or video preview",
+              "tags": ["Motion Graphics", "After Effects"],
+              "year": "2024"
+            },
+            {
+              "title": "Project Three",
+              "category": "Print",
+              "thumbnail": "Poster or editorial mockup",
+              "tags": ["Poster", "Typography"],
+              "year": "2023"
+            },
+            {
+              "title": "Project Four",
+              "category": "Social Media",
+              "thumbnail": "Grid of social posts or reel preview",
+              "tags": ["Social", "Campaign"],
+              "year": "2023"
+            },
+            {
+              "title": "Project Five",
+              "category": "Motion",
+              "thumbnail": "Animated logo or explainer clip",
+              "tags": ["Animation", "2D"],
+              "year": "2023"
+            },
+            {
+              "title": "Project Six",
+              "category": "Branding",
+              "thumbnail": "Full identity rollout mockup",
+              "tags": ["Brand", "Identity", "Packaging"],
+              "year": "2022"
+            }
+          ]
+        },
+        "layout": "Asymmetric masonry grid — large featured card (col-span 2), alternating sizes. Hover reveals project title, category, and arrow link.",
+        "animation": "Smooth scale-up on hover, cursor changes to custom 'View' cursor"
+      },
+
+      {
+        "id": "reel",
+        "type": "Showreel section",
+        "content": {
+          "headline": "Motion Reel",
+          "subheadline": "2024 — 2025",
+          "video_url": "https://your-reel-link.com",
+          "poster_image": "Dark cinematic still from the reel"
+        },
+        "layout": "Full-width video player with custom play button overlay, muted autoplay background loop. Click to play full audio.",
+        "animation": "Slow zoom on poster image before play, progress bar on video"
+      },
+
+      {
+        "id": "tools",
+        "type": "Tools & Software section",
+        "content": {
+          "headline": "My Toolkit",
+          "tools": [
+            "Adobe After Effects",
+            "Adobe Illustrator",
+            "Adobe Photoshop",
+            "Premiere Pro",
+            "Cinema 4D",
+            "Figma",
+            "DaVinci Resolve",
+            "Rive"
+          ]
+        },
+        "layout": "Horizontal logo/icon row with tool names below, subtle hover lift effect",
+        "animation": "Fade in on scroll"
+      },
+
+      {
+        "id": "testimonials",
+        "type": "Client testimonials",
+        "content": {
+          "headline": "Kind Words",
+          "testimonials": [
+            {
+              "quote": "Placeholder quote — a short, powerful client testimonial.",
+              "author": "Client Name",
+              "role": "CEO, Company Name"
+            },
+            {
+              "quote": "Placeholder quote — another great testimonial about your work.",
+              "author": "Client Name",
+              "role": "Marketing Director, Company Name"
+            },
+            {
+              "quote": "Placeholder quote — mention specific results or impact.",
+              "author": "Client Name",
+              "role": "Founder, Startup Name"
+            }
+          ]
+        },
+        "layout": "Auto-advancing horizontal carousel, quote in large italic type",
+        "animation": "Crossfade between slides, dot indicators"
+      },
+
+      {
+        "id": "contact",
+        "type": "Contact / CTA section",
+        "content": {
+          "headline": "Let's Build Something Great.",
+          "subheadline": "Open to freelance, collaborations, and full-time roles.",
+          "cta_label": "Get in Touch",
+          "email": "hello@yourname.com",
+          "social_links": [
+            { "platform": "Behance", "url": "#" },
+            { "platform": "Instagram", "url": "#" },
+            { "platform": "LinkedIn", "url": "#" },
+            { "platform": "Dribbble", "url": "#" }
+          ]
+        },
+        "layout": "Full-screen dark section, large centered headline, email link, social icon row below",
+        "animation": "Glitchy text scramble effect on headline on scroll-in"
+      }
+    ],
+
+    "global_interactions": {
+      "cursor": "Custom circular cursor that scales up on hover over links and project cards",
+      "scroll_behavior": "Smooth scroll, section snap optional",
+      "page_transition": "Fade or slide wipe between pages",
+      "loading_screen": "Brief animated logo or name reveal before site loads",
+      "nav": {
+        "style": "Minimal fixed top navbar, transparent until scroll, blurs on scroll",
+        "links": ["Work", "About", "Services", "Reel", "Contact"],
+        "logo": "Your name or monogram in the top-left"
+      },
+      "footer": "Minimal — copyright, email, and social links. One-liner tagline."
+    },
+
+    "technical_preferences": {
+      "framework": "React + Vite preferred, or vanilla HTML/CSS/JS",
+      "animations": "Framer Motion or GSAP for scroll-triggered animations",
+      "video_handling": "Lazy-load videos, autoplay muted, fallback poster image",
+      "responsive": "Mobile-first, fully responsive for 375px to 1440px+",
+      "performance": "Optimize images as WebP, defer non-critical JS"
+    }
+  }
+}
