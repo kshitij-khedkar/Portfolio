@@ -2,20 +2,27 @@ import { motion } from 'motion/react';
 import { useInView } from 'motion/react';
 import { useRef } from 'react';
 
-import {
-  SiAdobeaftereffects,
-  SiAdobeillustrator,
-  SiAdobephotoshop,
-  SiAdobepremierepro,
-  SiFigma,
-} from 'react-icons/si';
-
 const tools = [
-  { name: 'Adobe After Effects', icon: SiAdobeaftereffects },
-  { name: 'Adobe Illustrator', icon: SiAdobeillustrator },
-  { name: 'Adobe Photoshop', icon: SiAdobephotoshop },
-  { name: 'Premiere Pro', icon: SiAdobepremierepro },
-  { name: 'Figma', icon: SiFigma },
+  {
+    name: 'Adobe After Effects',
+    logo: 'https://cdn.simpleicons.org/adobeaftereffects',
+  },
+  {
+    name: 'Adobe Illustrator',
+    logo: 'https://cdn.simpleicons.org/adobeillustrator',
+  },
+  {
+    name: 'Adobe Photoshop',
+    logo: 'https://cdn.simpleicons.org/adobephotoshop',
+  },
+  {
+    name: 'Premiere Pro',
+    logo: 'https://cdn.simpleicons.org/adobepremierepro',
+  },
+  {
+    name: 'Figma',
+    logo: 'https://cdn.simpleicons.org/figma',
+  },
 ];
 
 export function Tools() {
@@ -36,31 +43,31 @@ export function Tools() {
         </motion.h2>
 
         <div className="flex flex-wrap justify-center gap-8">
-          {tools.map((tool, index) => {
-            const Icon = tool.icon;
-
-            return (
-              <motion.div
-                key={tool.name}
-                initial={{ opacity: 0, y: 30 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                whileHover={{ y: -5 }}
-                className="text-center"
+          {tools.map((tool, index) => (
+            <motion.div
+              key={tool.name}
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              whileHover={{ y: -5 }}
+              className="text-center"
+            >
+              <div
+                className="w-24 h-24 mb-4 bg-card rounded flex items-center justify-center border border-border hover:border-primary transition-all"
+                style={{ borderRadius: '4px' }}
               >
-                <div
-                  className="w-24 h-24 mb-4 bg-card rounded flex items-center justify-center border border-border hover:border-primary transition-all"
-                  style={{ borderRadius: '4px' }}
-                >
-                  <Icon className="w-12 h-12" />
-                </div>
+                <img
+                  src={tool.logo}
+                  alt={tool.name}
+                  className="w-12 h-12"
+                />
+              </div>
 
-                <p className="text-sm text-muted-foreground">
-                  {tool.name}
-                </p>
-              </motion.div>
-            );
-          })}
+              <p className="text-sm text-muted-foreground">
+                {tool.name}
+              </p>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
