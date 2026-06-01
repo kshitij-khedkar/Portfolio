@@ -5,23 +5,23 @@ import { useRef } from 'react';
 const tools = [
   {
     name: 'Adobe After Effects',
-    logo: 'https://cdn.simpleicons.org/adobeaftereffects',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg',
   },
   {
     name: 'Adobe Illustrator',
-    logo: 'https://cdn.simpleicons.org/adobeillustrator',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg',
   },
   {
     name: 'Adobe Photoshop',
-    logo: 'https://cdn.simpleicons.org/adobephotoshop',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg',
   },
   {
     name: 'Premiere Pro',
-    logo: 'https://cdn.simpleicons.org/adobepremierepro',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg',
   },
   {
     name: 'Figma',
-    logo: 'https://cdn.simpleicons.org/figma',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg',
   },
 ];
 
@@ -59,7 +59,7 @@ export function Tools() {
                 <img
                   src={tool.logo}
                   alt={tool.name}
-                  className="w-12 h-12"
+                  className="w-12 h-12 object-contain"
                 />
               </div>
 
