@@ -18,12 +18,16 @@ className="text-center mb-12"
 className="text-4xl md:text-5xl mb-3"
 style={{ fontFamily: 'var(--font-heading)' }}
 >
-Motion Reel </h2> <p className="text-muted-foreground text-lg">2024 — 2025</p>
-</motion.div>
+Motion Reel </h2>
 
 ```
+      <p className="text-muted-foreground text-lg">
+        2024 — 2025
+      </p>
+    </motion.div>
+
     <motion.a
-      href="https://www.youtube.com/watch?v=5Qjm7knYp2o?si=zAAMo7DBP60LFgEo"
+      href="https://www.youtube.com/watch?v=5Qjm7knYp2o"
       target="_blank"
       rel="noopener noreferrer"
       initial={{ opacity: 0, scale: 0.95 }}
