@@ -35,9 +35,13 @@ export function Hero() {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="space-y-3"
           >
-            <h2 className="text-2xl md:text-3xl text-muted-foreground" style={{ fontFamily: 'var(--font-heading)' }}>
+            <h2
+              className="text-2xl md:text-3xl text-muted-foreground"
+              style={{ fontFamily: 'var(--font-heading)' }}
+            >
               Graphic Designer & Motion Artist
             </h2>
+
             <p className="text-lg text-muted-foreground">
               Crafting visuals that move — literally.
             </p>
@@ -56,6 +60,7 @@ export function Hero() {
             >
               View Work
             </button>
+
             <button
               className="px-8 py-4 border border-border hover:border-primary transition-all hover:scale-105 flex items-center gap-2"
               style={{ borderRadius: '2px' }}
@@ -70,24 +75,14 @@ export function Hero() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.8, duration: 0.8 }}
-          className="relative aspect-square bg-card rounded overflow-hidden"
-          style={{ borderRadius: '4px' }}
+          className="relative aspect-square overflow-hidden bg-card"
+          style={{ borderRadius: '12px' }}
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20" />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <motion.div
-              animate={{
-                scale: [1, 1.1, 1],
-                opacity: [0.3, 0.5, 0.3],
-              }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-              className="w-64 h-64 bg-primary/30 rounded-full blur-3xl"
-            />
-          </div>
+          <img
+            src="./profile.jpg"
+            alt="Kshitij Khedkar"
+            className="w-full h-full object-cover"
+          />
         </motion.div>
       </div>
     </section>
