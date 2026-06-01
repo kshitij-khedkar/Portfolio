@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { useInView } from 'motion/react';
 import { useRef } from 'react';
-import { Mail, Instagram, Linkedin, Github } from 'lucide-react';
+import { Mail, Instagram, Linkedin } from 'lucide-react';
 
 export function Contact() {
   const ref = useRef(null);
@@ -50,18 +50,8 @@ export function Contact() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex justify-center gap-6 pt-12 flex-wrap"
+            className="flex justify-center gap-6 pt-12"
           >
-            <a
-              href="https://github.com/Kshitij-Khedkar"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors text-sm uppercase tracking-wide flex items-center gap-2"
-            >
-              <Github className="w-4 h-4" />
-              GitHub
-            </a>
-
             <a
               href="https://www.instagram.com/kzhitix"
               target="_blank"
@@ -73,7 +63,7 @@ export function Contact() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/kshitij-khedkar-32885a390/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BKtLI6N7MTSGcO4uu4uX6XQ%3D%3D"
+              href="https://www.linkedin.com/in/kshitij-khedkar"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors text-sm uppercase tracking-wide flex items-center gap-2"
